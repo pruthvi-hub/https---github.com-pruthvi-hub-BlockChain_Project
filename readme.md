@@ -18,11 +18,14 @@
 ## Main Account
 
 - [MA_01](https://ropsten.etherscan.io/token/0x943845aa72da72ef7e19e0f9b2493f5949bc465f?a=0x8a51546fc92cbf8dd33d66b1c4f1f108fe612796)
+0x8a51546fc92cbf8dd33d66b1c4f1f108fe612796
 
 ## Secondary Accounts
 
-- [SA_01](https://ropsten.etherscan.io/token/0x943845Aa72dA72Ef7e19e0F9B2493F5949bC465F?a=0x94ed1bef740620d7e868594ae0cf772184)
+- [SA_01](https://ropsten.etherscan.io/address/0xadc35d76f875959ccf0b8d84fb4437f4723a81b4)
+0xAdC35D76f875959CCF0B8D84FB4437f4723a81B4
 - [SA_02](https://ropsten.etherscan.io/address/0xdc3bdb898ada30e5ba32a5d45ac6e63f29d69387)
+0xdC3bdb898ADA30E5BA32a5d45aC6E63F29D69387
 
 # ERC20 TRC Contract
 
