@@ -41,12 +41,12 @@
    ```npm
    npm i
    ```
-3. Put the correct private key in src/tokenDistribution.js line **7**
+3. Put the correct private key in BCAP/distribution.js line **7**
 
    ```
    How to get the correct private key?
 
-   Try to decode documents/encrypted_private_key.txt using Salad Chiper, https://cryptii.com/
+   Try to decode BCAP/encrypted_private_key.txt using Salad Chiper, https://cryptii.com/
    ```
 
 4. Modify BCAP/addresses.txt, make sure you put correct ETH accounts that you want to transfer, put line space between each of them
