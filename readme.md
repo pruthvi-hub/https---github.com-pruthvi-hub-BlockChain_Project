@@ -62,7 +62,7 @@
    ```
    How to get the correct private key?
 
-   Try to documents/decode encrypted_private_key.txt using Salad Chiper, https://cryptii.com/
+   Try to BCAP/decode encrypted_private_key.txt using Salad Chiper, https://cryptii.com/
    ```
 
 2. Modify BCAP/addresses.txt, make sure you put correct ETH accounts that you want to transfer, put line space between each of them
