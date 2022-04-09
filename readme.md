@@ -31,57 +31,6 @@
 
 [Token Contract Address](https://ropsten.etherscan.io/token/0x943845aa72da72ef7e19e0f9b2493f5949bc465f?a=0x8a51546fc92cbf8dd33d66b1c4f1f108fe612796)
 
-Instead of code the distribution formula in node,
-I create two new functions in Solidity contract to support token distribution.
-Below are the details about both functions.
-
-### Get Balance of Owner by Percentage
-
-```solidity
-function balanceOfOwnerByPercentage(uint256 percentageAmount) public view returns (uint256) {
-    return _balances[tokenOwner].mul(percentageAmount).div(100);
-}
-```
-
-### Parameter 1: percentageAmount (%)
-
-```solidity
-Sample Value:
-5
-```
-
-## Distribute Token
-
-```solidity
-function transferMultipleByPercentage(address[] memory addresses, uint256 percentageAmount) public returns (bool) {
-    uint256 amount = balanceOfOwnerByPercentage(percentageAmount).div(addresses.length);
-
-    for (uint i = 0; i < addresses.length; i++) {
-        _balances[tokenOwner] = _balances[tokenOwner].sub(amount, "transfer amount exceeds balance");
-        _balances[addresses[i]] = _balances[addresses[i]].add(amount);
-        emit Transfer(tokenOwner, addresses[i], amount);
-    }
-    return true;
-}
-```
-
-### Parameter 1: Address[] (Pass account addresses as array)
-
-```solidity
-Sample Value:
-["0x2F814cCb88A752F5ba274D76Fc65c2F9e5F264F0",
-  "0xEa31b9ee14BdE262a76b873C33a8253C7Cd28020",
-  "0xdE42B1B0575C85a4fae476a86D21b4BaCcF1F758",
-  "0xcF250d3777BD6C86A302739C86058371997d6693",
-  "0xeC1C18b1d9CD728C208113A6E1E7234425b1a29f"]
-```
-
-### Parameter 2: percentageAmount (%)
-
-```solidity
-Sample Value:
-5
-```
 
 [Sample Transaction Result](https://ropsten.etherscan.io/tx/0xeb201a16eecb8ba51e29a974dc63e36fdd50c21f0244366b3e757b1eecc77072)
 
